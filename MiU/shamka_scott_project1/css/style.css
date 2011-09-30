@@ -1,0 +1,86 @@
+/*
+	Project 2
+	VFW 1108 
+	Scott C. Shamka
+	
+*/
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+
+#container{
+	width: 320px;
+	background-color: #b6b6b6;
+}
+
+#clear{
+	/* display: none; */
+}
+
+#header{
+	background-color: gray;
+	height: 50px;
+	margin-bottom: 5px;
+	
+}
+
+h1{
+	color: #b6b6b6;
+	font-family: "Arial Black";
+	padding-bottom: 10px;
+	padding-left: 17px;
+}
+
+form{
+	margin-top: -5px;
+
+	
+}
+
+p{
+	font-family: "Arial Black";
+}
+
+fieldset{
+	border: none;
+	font-weight: bold;
+	text-align: left;
+}
+
+li{
+	list-style-type: none;	
+}
+
+li.pos_left{
+	position: relative;
+	left: -40px;
+}
+
+label{
+	display: block;
+}
+
+legend{
+	line-height: 1.5em;
+}
+
+label{
+	font-style: oblique;
+}
+
+textarea{
+	height: 100px;
+}
+
+#editItem{
+	display: none;
+}
+
+#itemInfo{
+	display: none;
+}

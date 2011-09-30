@@ -1,0 +1,99 @@
+/*
+	Project
+	MiU 1110 
+	Scott C. Shamka
+	
+*/
+
+/* IE6 does have defaults for... */
+article, aside, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+body{
+	background-color: #3C8DC5;
+	margin: auto;
+}
+
+#container{
+	
+}
+
+#header{
+	background: -webkit-gradient(linear, left top, left bottom, from(#3C8DC5), to(#3C8DC5), color-stop(30%, #000), color-stop(70%, #000));
+	height: 50px;
+}
+
+h1{
+	margin: 0px;
+	padding-top: 5px;
+	text-align: center;
+	color: #fff;
+}
+
+#feature{
+	height: 181px;
+	background-color: #fff;
+}
+
+p{
+	margin: 0px;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	border: 1px solid;
+	color: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#c3723a), to(#c3993a));
+	text-align: center;
+	font-size: 28px;
+	margin: 5px 5px 9px 5px;
+	padding: 15px 0;
+	position: relative;
+	border-radius: 25px;
+	-webkit-box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
+	box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
+ 	text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+a p{
+	color: white;
+}
+
+div#searcharea label{
+	margin-left: 5px;
+}
+div#browse{
+	margin: 0px;
+	
+}
+
+div#browse li{
+	list-style-type: none;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	color: #000;
+	height: 60px;
+	margin: 0px;
+	background-color: #fff;
+}
+
+div#browse li p{
+	margin-top: 15px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+input:required{
+	
+}
+
+input[type=submit] {
+	-webkit-border-radius: 10%;
+	-moz-border-radius: 10%;
+	border-radius: 10%;
+}

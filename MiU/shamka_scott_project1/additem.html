@@ -1,0 +1,85 @@
+<!doctype html>
+
+<!-- First Web App
+   Author: Scott Shamka
+   VFW 1108
+-->
+
+<html>
+	<head>
+		
+		<!--Char set Meta-->
+		<meta charset="utf-8">
+		
+		<!-- Mobile meta -->
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>		
+		
+		<link rel="stylesheet" href="css/style2.css" type="text/css"/>
+		
+		<!-- WebForms -->
+		<script type="text/javascript" src="js/webforms/webforms2.js"></script>
+		
+		<!--Page Title-->
+		<title>Add Item</title>
+		
+	</head>
+	
+<body>
+	<div id="container">
+		
+		<div id="header">
+			<h1>Add An Event</h1>
+		</div>
+		
+		<form name="addItem" id="form1" action="#" onsubmit="return validateForm();">
+			
+			<fieldset>
+				<legend>Select Category: </legend>
+					<select name="category_list" id="category"></select>
+			</fieldset> 
+		
+			<fieldset id="info">
+				<legend id="itemInfo">Item Info: </legend>
+					<ul>
+						<li class="pos_left">
+							<label for="event">Event Title:</label>
+							<input type="text" id="event" name="event" placeholder="Event Title" required/>
+						</li>
+						
+						<li class="pos_left">
+							<label for="date">Date:</label>
+							<input type="date" id="date" name="date" title="yyyy-mm-dd" pattern="^(19|20)\d\d[- /.](0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])$" required/>
+						</li>
+						
+						<li class="pos_left">
+							<label for="notes">Notes:</label>
+							<textarea rows="2" cols="30" id="notes" name="notes" placeholder="Please enter any extra info here."></textarea>
+						</li>					
+						
+						<li class="pos_left">
+							<input type="submit" id="submit" value="Add Event" name="submit"/>
+							<button type="button" id="editItem" value="Edit Event" name="editItem">Edit Item</button>
+						</li>
+					</ul>
+			</fieldset>
+		</form>
+	
+
+	
+	<div id="dataList"></div>
+		
+	<p id="clear">
+		<a href="#" onClick="clearLocal(); location.reload();">Clear Local Storage</a>
+	</p>
+
+
+
+</div>	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>getItems();</script>
+
+	
+</body>
+	
+</html>
