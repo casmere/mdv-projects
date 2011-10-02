@@ -3,6 +3,8 @@
 // Scott C. Shamka
 
 var db = getLocalStorage() || alert("Sorry local storage is not supported");
+var catList = new Array("Home","School","Work","Other");
+
 
 // Execute several functions after the DOM is completely loaded.
 window.onload = startUp();
@@ -178,11 +180,9 @@ function addOption(selectbox,text,value)
 
 // Category list
 function addOption_list(selectbox){
-	var forList = new Array("Home","School","Work","Other");
-		for (var i=0; i < forList.length;++i){
-
-	addOption(document.addItem.category_list, forList[i], forList[i]);
-		}
+	for (var i=0; i < catList.length;++i){
+		addOption(document.addItem.category_list, catList[i], catList[i]);
+	}
 }
 
 function validateForm(){
@@ -204,6 +204,7 @@ function validateForm(){
 		
 
 }
+
 
 
 
